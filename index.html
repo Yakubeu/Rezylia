@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezylia – Odporność Psychiczna | Coaching</title>
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fonty: Cormorant Garamond (elegancki serif dla nagłówków) + Plus Jakarta Sans (czytelny tekst) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              sage: '#96A886',       /* Kolor tła z Twojego logo */
+              dark: '#1D2A20',       /* Głęboki ciemnozielony do tekstów i przycisków */
+              card: '#F4F3EE',       /* Ciepły, kremowy odcień kontenerów oferty/o mnie/kontaktu */
+              cardHover: '#EDECE6',  /* Subtelny odcień pod kursor */
+              bg: '#FAF9F6',         /* Czyste, jasne tło strony */
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-bg text-slate-800 font-sans antialiased selection:bg-brand-sage selection:text-white">
+
+  <!-- ================================================================= -->
+  <!-- 1. GÓRNY PASEK (NAVBAR) W KOLORZE TWOJEGO LOGO -->
+  <!-- ================================================================= -->
+  <header class="sticky top-0 z-50 bg-brand-sage text-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- LOGO / NAZWA (Wstaw tutaj plik graficzny: <img src="logo.png" class="h-12" alt="Rezylia">) -->
+     <!-- LOGO GŁÓWNE W PASKU GÓRNYM -->
+      <a href="#" class="flex items-center py-2">
+        <img src="logo2.png" alt="Rezylia – Odporność Psychiczna" class="h-12 md:h-14 w-auto object-contain">
+      </a>
+       
+
+      <!-- MENU GŁÓWNE -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-white/90">
+        <a href="#o-mnie" class="hover:text-white transition-colors">O mnie</a>
+        <a href="#oferta" class="hover:text-white transition-colors">Oferta</a>
+        <a href="#jak-pracujemy" class="hover:text-white transition-colors">Jak pracujemy</a>
+        <a href="#kontakt" class="hover:text-white transition-colors">Kontakt</a>
+      </nav>
+
+     <!-- PRZYCISK LINKEDIN W PASKU GÓRNYM -->
+      <a href="http://linkedin.com/company/rezylia" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         title="Profil Rezylia na LinkedIn"
+         aria-label="LinkedIn"
+         class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-dark text-white hover:bg-black hover:scale-105 transition-all shadow-sm">
+        <!-- Minimalistyczna konturowa ikona LinkedIn -->
+        <svg class="w-5 h-5 fill-none stroke-current" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12" rx="0.5"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ================================================================= -->
+  <!-- 2. SEKCJA GŁÓWNA (HERO) -->
+  <!-- ================================================================= -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      
+      <!-- Pigułka informacyjna -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-card text-brand-dark text-xs font-semibold uppercase tracking-wider mb-6 shadow-sm border border-stone-200">
+        <span class="w-2 h-2 rounded-full bg-brand-sage animate-pulse"></span>
+        Coaching Osobisty i Zawodowy
+      </div>
+      
+      <!-- NAGŁÓWEK GŁÓWNY (TUTAJ EDYTUJ TREŚĆ) -->
+      <h1 class="text-4xl md:text-6xl font-serif text-brand-dark tracking-tight leading-tight md:leading-tight mb-6">
+        Odkryj wewnętrzną siłę i zbuduj <br class="hidden sm:inline" />
+        <span class="italic text-brand-sage">trwałą odporność</span> psychiczną.
+      </h1>
+
+      <!-- PODTYTUŁ -->
+      <p class="text-base md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-10">
+        Profesjonalny coaching rozwojowy i wsparcie w kryzysie. Pomagam odzyskać równowagę i odwagę do podejmowania decyzji w zgodzie ze sobą.
+      </p>
+
+      <!-- PRZYCISKI AKCJI -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#kontakt" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-dark text-white font-semibold text-sm hover:bg-black shadow-lg shadow-brand-dark/15 transition-all text-center">
+          Umów bezpłatną konsultację (15 min)
+        </a>
+        <a href="#oferta" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-slate-700 border border-stone-300 font-medium text-sm hover:bg-stone-50 transition-all text-center">
+          Zobacz ofertę
+        </a>
+      </div>
+
+      <!-- PUNKTY ZAUFANIA -->
+      <div class="mt-14 pt-8 border-t border-stone-200/80 flex flex-wrap items-center justify-center gap-6 text-slate-500 text-xs sm:text-sm">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-brand-sage" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          100% poufności
+        </div>
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-brand-sage" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          Sesje online lub stacjonarnie
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================= -->
+  <!-- 3. SEKCJA "O MNIE" (ZAMKNIĘTA W SPÓJNYM KONTENERZE Z CIENIEM) -->
+  <!-- ================================================================= -->
+  <section id="o-mnie" class="py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <!-- KONTENER O MNIE (Identyczny styl jak oferta) -->
+      <div class="bg-brand-card border border-stone-200/60 rounded-3xl p-8 md:p-14 shadow-lg shadow-stone-200/50">
+        <div class="grid md:grid-cols-12 gap-10 items-center">
+          
+          <!-- ZDJĘCIE (Podmień src="twoje-zdjecie.jpg") -->
+          <div class="md:col-span-5">
+            <div class="w-full aspect-[4/5] rounded-2xl bg-stone-300/70 overflow-hidden shadow-sm flex items-center justify-center text-center p-6">
+              <span class="text-xs text-slate-600 font-medium">
+                <img src="foto.jpg" alt="Moje zdjęcie" class="w-full h-full object-cover rounded-2xl">
+              </span>
+            </div>
+          </div>
+
+          <!-- TREŚĆ O MNIE -->
+          <div class="md:col-span-7">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-sage block mb-2">O mnie</span>
+            <h2 class="text-3xl md:text-4xl font-serif text-brand-dark mb-6 leading-tight">
+              Wierzę, że każdy kryzys kryje w sobie zasoby do wzrostu.
+            </h2>
+            
+            <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
+              <!-- TUTAJ WPISZ SWÓJ OPIS -->
+              Nazywam się Aleksandra Głowacka. Wspieram osoby stojące na rozdrożu kariery, mierzące się z chronicznym stresem lub poszukujące nowej ścieżki rozwoju.
+            </p>
+            <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
+              <!-- TUTAJ WPISZ SWÓJ OPIS -->
+              Pojęcie <strong>rezyliencji</strong> to coś więcej niż radzenie sobie z trudnościami – to umiejętność adaptacji i wychodzenia ze zmian silniejszym. Na sesjach tworzę bezpieczną przestrzeń, w której odnajdziesz własne odpowiedzi.
+            </p>
+
+            <!-- LINK DO LINKEDINA -->
+            <a href="https://www.linkedin.com/in/aleksandra-g%C5%82owacka-89620a35b/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-dark hover:text-brand-sage transition-colors">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.2a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+              <span>Zobacz moje rekomendacje i profil na LinkedIn &rarr;</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================= -->
+  <!-- 4. OBSZARY WSPARCIA (OFERTA) -->
+  <!-- ================================================================= -->
+  <section id="oferta" class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-sage">Oferta</span>
+        <h2 class="text-3xl md:text-4xl font-serif text-brand-dark mt-2 mb-3">Obszary wsparcia</h2>
+        <p class="text-sm text-slate-500">Dopasowujemy proces do Twoich realnych potrzeb.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Karta 1 -->
+        <div class="bg-brand-card border border-stone-200/60 p-8 rounded-3xl shadow-lg shadow-stone-200/50 hover:shadow-xl transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-brand-sage mb-6 shadow-sm">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-brand-dark mb-3">Rezyliencja i Stres</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Praca nad redukcją przewlekłego napięcia, zapobieganiem wypaleniu zawodowemu i budowaniem psychicznej tarczy.
+            </p>
+          </div>
+          <ul class="text-xs text-slate-500 space-y-2 border-t border-stone-200 pt-4">
+            <li>• Regeneracja i higiena układu nerwowego</li>
+            <li>• Praca z trudnymi emocjami</li>
+          </ul>
+        </div>
+
+        <!-- Karta 2 -->
+        <div class="bg-brand-card border border-stone-200/60 p-8 rounded-3xl shadow-lg shadow-stone-200/50 hover:shadow-xl transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-brand-sage mb-6 shadow-sm">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-brand-dark mb-3">Coaching Zmiany i Kariery</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Wsparcie w przełomowych momentach zawodowych – awans, zmiana pracy, powrót na rynek lub własna ścieżka.
+            </p>
+          </div>
+          <ul class="text-xs text-slate-500 space-y-2 border-t border-stone-200 pt-4">
+            <li>• Odkrywanie mocnych stron</li>
+            <li>• Asertywność i wyznaczanie granic</li>
+          </ul>
+        </div>
+
+        <!-- Karta 3 -->
+        <div class="bg-brand-card border border-stone-200/60 p-8 rounded-3xl shadow-lg shadow-stone-200/50 hover:shadow-xl transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-brand-sage mb-6 shadow-sm">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-brand-dark mb-3">Rozwój i Przekonania</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Rozpoznawanie blokujących schematów myślowych, budowanie pewności siebie i poczucia wewnętrznego spokoju.
+            </p>
+          </div>
+          <ul class="text-xs text-slate-500 space-y-2 border-t border-stone-200 pt-4">
+            <li>• Praca z wewnętrznym krytykiem</li>
+            <li>• Spójność z własnymi wartościami</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================= -->
+  <!-- 5. JAK PRACUJEMY (3 KROKI) -->
+  <!-- ================================================================= -->
+  <section id="jak-pracujemy" class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-sage">Proces</span>
+        <h2 class="text-3xl font-serif text-brand-dark mt-2">Jak pracujemy?</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 text-center relative">
+        <div class="p-6">
+          <div class="w-12 h-12 mx-auto rounded-full bg-brand-dark text-white flex items-center justify-center font-bold text-sm mb-4">
+            01
+          </div>
+          <h4 class="text-base font-bold text-brand-dark mb-2">Konsultacja zapoznawcza</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            15 minut bezpłatnej rozmowy online. Sprawdzamy wzajemne dopasowanie i określamy wyzwania.
+          </p>
+        </div>
+
+        <div class="p-6">
+          <div class="w-12 h-12 mx-auto rounded-full bg-brand-dark text-white flex items-center justify-center font-bold text-sm mb-4">
+            02
+          </div>
+          <h4 class="text-base font-bold text-brand-dark mb-2">Ustalenie celów</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Definiujemy pożądany kierunek, ustalamy harmonogram oraz ramy etyczne naszej współpracy.
+          </p>
+        </div>
+
+        <div class="p-6">
+          <div class="w-12 h-12 mx-auto rounded-full bg-brand-dark text-white flex items-center justify-center font-bold text-sm mb-4">
+            03
+          </div>
+          <h4 class="text-base font-bold text-brand-dark mb-2">Regularne sesje i działanie</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Spotkania co 1–2 tygodnie. Wdrażasz nowe narzędzia i obserwujesz trwałe zmiany w życiu.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ================================================================= -->
+  <!-- 6. SEKCJA KONTAKT -->
+  <!-- ================================================================= -->
+  <section id="kontakt" class="py-16 pb-28">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <!-- KONTENER KONTAKT -->
+      <div class="bg-brand-card border border-stone-200/60 rounded-3xl p-8 md:p-14 shadow-lg shadow-stone-200/50">
+        <!-- items-stretch sprawia, że obie kolumny mają dokładnie tę samą wysokość -->
+        <div class="grid md:grid-cols-12 gap-10 items-stretch">
+          
+          <!-- LEWA KOLUMNA: DANE I HASŁO -->
+          <div class="md:col-span-6 flex flex-col justify-center">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-sage block mb-2">Kontakt</span>
+            <h2 class="text-3xl md:text-5xl font-serif text-brand-dark mb-4 leading-tight">
+              Porozmawiajmy o Twoim rozwoju.
+            </h2>
+            <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
+              Zrób pierwszy krok bez żadnych zobowiązań. Napisz, zadzwoń lub skontaktuj się ze mną bezpośrednio.
+            </p>
+
+            <div class="space-y-3 text-sm text-slate-700">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-brand-sage shadow-xs">✉</span>
+                <a href="mailto:kontakt@twojadomena.pl" class="hover:underline">kontakt@twojadomena.pl</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-brand-sage shadow-xs">📞</span>
+                <a href="tel:+48000000000" class="hover:underline">+48 000 000 000</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRAWA KOLUMNA: LOGO DOPASOWANE DO WYSOKOŚCI LEWEJ TREŚCI -->
+          <div class="md:col-span-6 flex items-center justify-center p-2">
+            <img src="logo.png" 
+                 alt="Rezylia – Odporność Psychiczna" 
+                 class="w-auto h-full max-h-[320px] rounded-2xl md:max-h-[360px] object-contain drop-shadow-sm hover:scale-105 transition-transform duration-300">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================= -->
+  <!-- 7. STOPKA -->
+  <!-- ================================================================= -->
+  <footer class="border-t border-stone-200 py-8 text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 Rezylia – Odporność Psychiczna. Wszelkie prawa zastrzeżone.
+      </div>
+      <div class="flex gap-6">
+        <a href="http://linkedin.com/company/rezylia" target="_blank" class="hover:text-slate-800 transition-colors">LinkedIn</a>
+        <a href="#" class="hover:text-slate-800 transition-colors"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
